@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.8.0 on darwin)" generated="2024-07-16T14:06:24.990056" rpa="false" schemaversion="5">
+<suite id="s1" name="Saasnz" source="/Users/ph/Desktop/Automation/saasnz/saasnz/solution/saasnz.robot">
+<test id="s1-t1" name="登录" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:06:25.752258" level="INFO">Opening browser 'Chrome' to base url 'http://test.nz.agrisaas.com.cn/intelligent-agriculture/1.0.0/index/#/login'.</msg>
+<msg time="2024-07-16T14:11:26.435655" level="WARN">There was an error managing chromedriver (error decoding response body); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-16T14:06:25.751254" elapsed="306.210413"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-16T14:11:32.070146" elapsed="0.058875"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-16T14:11:32.133554" elapsed="0.485062"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:32.621551" level="INFO">Typing text '17300000000' into text field 'xpath=//*[@id="app"]/div[1]/div/div/div[3]/form/div[1]/div/div/div/div/input'.</msg>
+<arg>xpath=//*[@id="app"]/div[1]/div/div/div[3]/form/div[1]/div/div/div/div/input</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:32.619358" elapsed="0.369711"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:32.991064" level="INFO">Typing text '000000' into text field 'xpath=//*[@id="app"]/div[1]/div/div/div[3]/form/div[2]/div/div/div/div/input'.</msg>
+<arg>xpath=//*[@id="app"]/div[1]/div/div/div[3]/form/div[2]/div/div/div/div/input</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:32.989893" elapsed="0.142916"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:33.134295" level="INFO">Clicking element 'xpath=/html/body/div[1]/div[1]/div/div/div[3]/div[1]/button'.</msg>
+<arg>xpath=/html/body/div[1]/div[1]/div/div/div[3]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:33.133582" elapsed="0.074830"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:33.210696" level="INFO">Clicking element 'xpath=//*[@id="app"]/div[1]/div/div/div[7]/div/div[2]/div[2]/button/span'.</msg>
+<arg>xpath=//*[@id="app"]/div[1]/div/div/div[7]/div/div[2]/div[2]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:33.209806" elapsed="0.464181"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:33.806833" level="INFO">Element 'xpath=//*[@id="app"]/div[1]/div[1]/div/div[1]' is displayed.</msg>
+<arg>xpath=//*[@id="app"]/div[1]/div[1]/div/div[1]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:11:33.736650" elapsed="0.070410"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:06:25.747785" elapsed="308.059925"/>
+</test>
+<test id="s1-t2" name="添加商品" line="29">
+<kw name="Add Product" owner="custom">
+<arg>苄嘧磺隆</arg>
+<status status="PASS" start="2024-07-16T14:11:33.812262" elapsed="19.646990"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:53.460287" level="INFO">Typing text '苄嘧磺隆' into text field 'xpath=//*[@id="app"]/div[2]/div/div[2]/div[2]/div/div[1]/div/input'.</msg>
+<arg>xpath=//*[@id="app"]/div[2]/div/div[2]/div[2]/div/div[1]/div/input</arg>
+<arg>苄嘧磺隆</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:53.459765" elapsed="0.540021"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:54.001334" level="INFO">Clicking element 'xpath=//*[@id="app"]/div[2]/div/div[2]/div[2]/div/div[2]/button/span'.</msg>
+<arg>xpath=//*[@id="app"]/div[2]/div/div[2]/div[2]/div/div[2]/button/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:54.000678" elapsed="0.092333"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:54.185663" level="INFO">Element 'xpath=//*[@id="app"]/div[2]/div/div[3]/div[2]/table/tr/td[4]/div' is displayed.</msg>
+<arg>xpath=//*[@id="app"]/div[2]/div/div[3]/div[2]/table/tr/td[4]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T14:11:54.093799" elapsed="0.092035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:54.186910" level="INFO">Clicking element 'xpath=//*[@id="app"]/div[2]/div/div[3]/div[2]/table/tr/td[12]/button[3]/span'.</msg>
+<arg>xpath=//*[@id="app"]/div[2]/div/div[3]/div[2]/table/tr/td[12]/button[3]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:54.186314" elapsed="0.206204"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T14:11:54.394100" level="INFO">Clicking element 'xpath=/html/body/div[3]/div/div[3]/button[2]/span'.</msg>
+<arg>xpath=/html/body/div[3]/div/div[3]/button[2]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T14:11:54.393213" elapsed="2.559733"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:11:33.809973" elapsed="23.143373"/>
+</test>
+<test id="s1-t3" name="入库登记" line="39">
+<kw name="Product Storage" owner="custom">
+<status status="PASS" start="2024-07-16T14:11:56.957725" elapsed="17.690174"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:11:56.955164" elapsed="17.693713"/>
+</test>
+<test id="s1-t4" name="销售出库" line="43">
+<kw name="Sale" owner="custom">
+<status status="PASS" start="2024-07-16T14:12:14.651733" elapsed="8.004855"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:12:14.649972" elapsed="8.010565"/>
+</test>
+<test id="s1-t5" name="获取库存数据" line="47">
+<kw name="Get Inventory" owner="custom">
+<msg time="2024-07-16T14:12:28.326935" level="INFO">Connected to MySQL database
+('1', '农药', 'PD20140879', '草铵膦', '', '50千克/袋', '94', '92', '1.00', '3.00')
+('2', '农药', 'PD20095079', '氧乐果', '', '3.00斤/支', '5', '5', '0.00', '1.00')
+('3', '农药', 'PD20040391', '高效氯氰菊酯', '', '50.00斤/瓶', '1', '0', '1.00', '4.00')
+('4', '农药', 'PD20211079', '甲维·氯虫苯', '', '20.00克/袋', '253', '158', '18.00', '3.50')
+MySQL connection is closed</msg>
+<status status="PASS" start="2024-07-16T14:12:22.663776" elapsed="5.663542"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:12:22.661492" elapsed="5.666632"/>
+</test>
+<test id="s1-t6" name="关闭浏览器" line="51">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-16T14:12:28.332677" elapsed="0.349448"/>
+</kw>
+<status status="PASS" start="2024-07-16T14:12:28.329737" elapsed="0.352983"/>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" start="2024-07-16T14:06:24.994010" elapsed="363.691845"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Saasnz">Saasnz</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-16T14:11:26.435655" level="WARN">There was an error managing chromedriver (error decoding response body); using driver found in the cache</msg>
+</errors>
+</robot>
